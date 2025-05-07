@@ -44,8 +44,8 @@ print('Exercise 1:', manage_students())
 # Use a for loop to iterate over the strings in foods and append each string to meal.
 
 def combine_foods():
-    # your code here
     foods = ('Peanut Butter', 'Mac and Cheese', 'Candy')
+    # your code here
     meal = ''
     
     for food in foods:
@@ -58,3 +58,24 @@ def combine_foods():
 print('Exercise 2:', combine_foods())
 
 # --------------------------------------------------------------------------------------------------------------
+
+# Exercise 3: Slicing Tuples
+#
+# Using the slice operator, assign a new tuple containing only the last two food strings in the foods to a variable named last_two_foods.
+
+def slice_foods():
+    # your code here
+    # i supposed i could have established foods as a global variable in the last exercise so i could reuse it here, but i didn't...
+    foods = ('Peanut Butter', 'Mac and Cheese', 'Candy')
+    last_two_foods = foods[-2:]
+    return last_two_foods
+
+# Call the function and print the result
+print('Exercise 3:', slice_foods())
+
+# https://www.geeksforgeeks.org/tuple-slicing-python/?utm_source=chatgpt.com
+# slice = tuple[start:stop]
+# Left out stop item (but kept the colon) so it would return items at -2 to the end
+
+# --------------------------------------------------------------------------------------------------------------
+
